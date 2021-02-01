@@ -17,6 +17,7 @@ ENV PATH=/opt/adtools/bin:$PATH
 RUN apt-get update && apt-get upgrade --yes && \
   apt-get install -y \
     make \
+    python \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
